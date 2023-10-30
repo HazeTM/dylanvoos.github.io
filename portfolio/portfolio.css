@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+/* degradado*/
+body{
+    background: linear-gradient(to top, #9A9DA2,#00001F);
+    text-align: center;
+    color: white;
+    padding: 16rem 2rem;
+    margin: 7rem;
+}
+h1{
+    margin-top: -34%;
+}
+img.grayscale {
+    filter: gray; 
+    -webkit-filter: grayscale(100%); 
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    }
+img.grayscale:hover {
+    filter: none;
+    -webkit-filter: grayscale(0%); }
+/*rebe*/
+.iz1 img{
+    width: 15em;
+    height: 13em;
+    float: left;
+    margin-top: 3%;
+    border-radius: 2%;
+}
+.centrado{
+    position: absolute;
+    top: 57%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    width: 33.3%;
+    text-align:center;
+}
+.centrado:hover{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffff;
+}
+/*maxi*/
+.de1 img{
+    width: 15em;
+    height: 13em;
+    margin-left: -22.5%;
+    margin-top: 3%;
+    border-radius: 2%;
+}
+.centrado2{
+   position: absolute;
+   top: 57%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   color: transparent;
+   width: 33.3%;
+   text-align:center;
+}
+.centrado2:hover{
+   font-family: 'Courier New', Courier, monospace;
+   color: #ffff;
+}
+/*gonza*/
+.iz2 img{
+    width: 15em;
+    height: 13em;
+    margin-left: 77%;
+    margin-top: -20%;
+    display: flex;
+    border-radius: 2%;
+}
+.centrado3{
+    position: absolute;
+    top: 57%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    width: 33.3%;
+    text-align:center;
+}
+.centrado3:hover{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffff;
+}
+/*dana*/
+.de2 img{
+    width: 15em;
+    height: 13em;
+    margin-top: 15%;
+    border-radius: 2%;
+    margin-right: 76%;
+}
+.centrado4{
+    position: absolute;
+    top: 115%;
+    left: 19%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    width: 33.3%;
+    text-align:center;
+}
+.centrado4:hover{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffff;
+}
+/*rodri*/
+.iz3 img{
+    width: 15em;
+    height: 13em;
+    margin-left: 39%;
+    margin-top: -20%;
+    border-radius: 2%;
+    display: flex;
+}
+.centrado5{
+    position: absolute;
+    top: 115%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    width: 33.3%;
+    text-align:center;
+}
+.centrado5:hover{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffff;
+}
+/*dylan*/
+.de3 img{
+    width: 15em;
+    height: 13em;
+    display: flex;
+    margin-top: -19.5%;
+    margin-left: 77%;
+    border-radius: 2%;
+}
+.centrado6{
+    position: absolute;
+    top: 115%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    width: 33.3%;
+    text-align:center;
+}
+.centrado6:hover{
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffff;
+}
+.rebe h2{
+    float: left;
+    margin-top: -57%;
+    margin-left: 3%;
+    font-weight: 300;
+}
+.maxi h2{
+    display: flex;
+    margin-left: 39.5%;
+    margin-top: -57%;
+    font-weight: 300;
+}
+.gonza h2{
+    display: flex;
+    margin-top: -57%;
+    float: right;
+    margin-right: 3%;
+    font-weight: 300;
+}
+.dana h2{
+    float: left;
+    margin-left: 5%;
+    margin-top: -22%;
+    font-weight: 300;
+}
+.rodri h2{
+    display: flex;
+    margin-left: 42%;
+    margin-top: 33%;
+    font-weight: 300;
+}
+.dylan h2{
+    display: flex;
+    margin-top: -22%;
+    float: right;
+    margin-right: 5%;
+    font-weight: 300;
+}
+@font-face{
+    font-family: hola;
+    src: url(Vogue.ttf);
+}
+h2{
+    font-family: hola;
+}
+@font-face{
+    font-family: portfolio;
+    src: url(Vogue.ttf);
+}
+h1{
+    font-family: portfolio;
+    font-weight: 400;
+    font-size: 300%;
+}
+.centrado1 p{
+    font-family:'Times New Roman', Times, serif ;
+}
+.instagram{
+    width: 7%;
+    height: 7%;
+    position: relative;
+    color: transparent;
+}
+.facebook{
+    width: 7%;
+    height: 7%;
+    position: relative;
+}
+.twitter{
+    width: 7%;
+    height: 7%;
+    position: relative;
+}

@@ -1,0 +1,470 @@
+/*------------------------------------------------------HEADER-------------------------------------------------------*/
+
+header{         /*color de fondo*/
+    background-image:linear-gradient(to bottom, #2d2f7a, #4f52d6, #ffffff);
+}
+
+/*------------------------------------------------------SECCION DE TITULO-------------------------------------------------------*/
+/*------------------------------------------------------LA ANIMACION DEL TITULO NO FUNCIONA (?---------------------------------------------------*/
+
+.titulo1{           /*estilo del titulo*/
+    margin-left: 0%;
+    margin-right: 12%;
+    position: absolute;
+    margin-top: -7em;
+    font-family: A;
+    text-align: center;
+    overflow: hidden;
+    white-space: nowrap;
+    color: black;
+    width: 0;
+    display: flex;
+    justify-content: center;
+    border-right: 2px solid rgba(0,0,0,0);
+    animation: animacionIntro 5s steps(8) 1s infinite normal;
+    
+}
+@keyframes animacionIntro{          /*animacion del titulo*/
+    from{
+        width: 100%;
+        border-right: none;
+    }
+    to{
+        width:100%;
+        border-right:none;
+    }
+
+/*------------------------------------------------------SECCION DE IMAGEN A HOME-------------------------------------------------------*/
+
+}
+button{             /*detalles menores de la imagen*/
+    background-color: transparent;
+    border: 0;
+}
+
+button img{             /*estilo de la imagen*/
+    transition-duration:0.5;
+    padding: 0px 0px;
+    display: inline-block;
+    border: 0;
+    margin:0;
+    cursor: pointer;
+    height: 15em;
+    width: 17em;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    object-fit: fill;
+    margin-top: 3em;
+    margin-left: 50%;
+    margin-right: 50%;
+    position: relative;
+}
+
+.button:hover{             /*+ detalles menores de la imagen*/
+    color:#000000;
+    opacity: 0.5;
+}
+
+/*------------------------------------------------------SECCION MENU PRINCIPAL-------------------------------------------------------*/
+
+.BarraSeleccion{            /*<--eso mismo*/
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.li{
+    float:left;
+}
+
+nav a{          /*separador de categorias*/
+    width:100px;
+    display: block;
+    padding: 15px 20px;
+}
+
+.Materias{          /*estilo "diseño curricular*/
+    border: #31404b;
+    border-width: 10px;
+    float: left;
+    margin-left:2em;
+    background-color: rgba(255, 0, 0, 0.6);
+    text-align: center;
+    padding-top: 11px;
+    padding-bottom: 19px;
+    padding-left: 1em;
+    padding-right: 1em;
+    margin-left: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.Materias{          /*alinea en bloques*/
+    color: aliceblue;
+    text-decoration: none;
+    display: block;
+}
+
+.MenuHorizontal{            /*coloca los menus en horizontal, obviamente*/
+    list-style: none;
+    display: flex;
+}
+
+.MenuHorizontal{            /*da formato al menu horizontal*/
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: center;
+    padding-left: 0em;
+}
+
+.MenuHorizontal > li > a{           /*estilo de "ciclo basico" y "ciclo superior"*/
+    display: block;
+    padding: 15px 20px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.MenuHorizontal >li:hover{             /*da tono rojo al pasar sobre "ciclo basico" y "ciclo superior"*/
+    background-color: rgba(255, 0, 0, 0.6);
+}
+
+.MenuVertical{              /*coloca las opciones dentro del menu horizontal*/   
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.MenuHorizontal > li:hover .MenuVertical{           /*hace visible las opciones*/
+    display: block;
+}
+
+.MenuVertical > li:hover{           /*da tono rojo al pasar sobre las opciones*/
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.MenuVertical > li a{           /*estilo de las opciones*/
+    text-align: left;
+    display: flex;
+    color: aliceblue;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+}
+
+/*------------------------------------------------------BODY-------------------------------------------------------*/
+
+.container{             /*contiene las imagenes de la galeria*/
+    margin-top:5em;
+    margin-left:20%;
+    margin-right:20%;
+    width:800px;
+    padding:30px;
+}
+
+ul, li {            /*detalles menores*/
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+ul.slider{          /*tamaño del contenedor*/
+    position: relative;
+    width: 1000px;
+    height: 600px;
+}
+
+ul.slider li {              /*hace que solo aparezca una imagen a la vez*/
+    position: absolute;
+    left:0px;
+    top: 0px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+    background:fff;
+}
+
+ul.slider li img{           /*tamaño de las imagenes, las adapta al contenedor*/
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+ul.slider li:first-child {          /*ni la mas palida idea de que hace (?*/
+    opacity: 1;
+}
+
+ul.slider li:target {           /*ni la mas palida idea de que hace (?*/
+    opacity: 1;
+}
+
+.menu{          /*posicion del menu*/
+    margin-top: -2em;
+    margin-left: 42%;
+    margin-bottom: 10rem;
+}
+
+.menu li{           /*coloca los botones en horizontal*/
+    display: inline-block;
+    padding-right: 10px;
+    text-align: center;
+}
+
+.menu li a{             /*da formato al boton para cambiar de imagen*/
+    display: inline-block;
+    color:white;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    width: 1px;
+    height: 1px;
+    font-size: 20px;
+    border-radius: 100%;
+}
+
+.menu li a:hover{           /*tono rojo al pasar sobre los botones*/
+    background-color: red;
+}
+
+.slider{            /*da transparencia a las imagenes*/
+    transition: .5s;
+    opacity: 60%;
+}
+
+.slider:hover{          /*al pasar sobre la imagen se hace mas visible y añade animacion al cambiar*/
+    position: relative;
+    transition: .5s;
+    opacity: 100%;
+}
+
+/*------------------------------------------------------FOOTER-------------------------------------------------------*/
+
+footer{
+    background-color: #333333;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 400px;
+    margin-top: -3%;
+    position: relative;
+    border: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+}
+/*--------------------------------------------------------------------------------*/
+/*----------------------------------FOOTER contenedor*----------------------------*/
+.footer{
+    display: flex;
+    width: 100%;
+}
+/*--------------------------------------------------------------------------------*/
+/*--------------------------------------------H1----------------------------------*/
+h1{
+    color: white;
+    font-size: 1.5em;
+    font-family:titulo;
+}
+
+@font-face{
+    font-family: titulo;
+    src: url(Vogue.ttf);
+}
+/*---------------------------------------------------------------------------------*/
+/*.--------------------------------ESCUELA-------------------------------------*/
+.escuela{
+    width: 25%;
+    margin-left: 1%;
+}
+
+.escuela h1{
+    margin-top: 70px;
+}
+
+/*ESCUELA IMAGEN*/
+.escuela img{
+    height: 150px;
+    width: 150px;
+    margin-left: 23%;
+}
+
+h2{
+    color: white;
+    margin-bottom: -15%;
+    text-align: justify;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-size: 1.4em;
+} 
+/*------------------------------TERMINA ESCUELA--------------------------------*/
+/*-----------------------------------CLIMA-------------------------------------*/
+.clima{
+    width: 30%;
+}
+
+.clima h1{
+    margin-top: 10%;
+}
+/*----------------------------------TERMINA CLIMA---------------------------------*/
+/*----------------------------------UBICACION----------------------------------*/
+.ubicacion{
+    width: 15%;
+}
+
+.ubicacion h1{
+    margin-top: 20%;
+}
+
+.ubicacion img{
+    height: 10px;
+    width: 10px;
+    margin-right: 10%;
+    display: flex;
+} 
+/*---------------------------TERMINA UBICACION--------------------------------*/
+/*-----------------------------------DATOS------------------------------------*/
+.datos{
+    width: 40%;
+}
+
+.datos h1{
+    margin-top: 5%;  
+}
+/*--------------------------------datos ubicación-------------------------------------*/
+.textoubi article{
+    color: white;
+    margin-left: 30%; 
+    position: relative; 
+    display: flex; 
+    top: -20px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.imagenubi img{
+    height: 7%;
+    width: 7%;
+    margin-left: 20%;
+    display: flex;
+    position: relative;
+}
+/*-----------------------------termina datos ubicación----------------------------*/
+/*--------------------------datos telefono-----------------------------------------*/
+.textotelefono article{
+    color: white;
+    margin-left: 30%;
+    position: relative;
+    display: flex;
+    top: -27px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.imagentelefono img{
+    height: 7%;
+    width: 7%;
+    margin-left: 20%;
+    display: flex;
+    position: relative;
+}
+/*-------------------------termina datos telefono---------------------------------*/
+/*-------------------------------------datos gmail---------------------------------*/
+.textogmail article{
+    color: white;
+    margin-left: 30%;
+    position: relative;
+    display: flex;
+    top: -35px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 100;
+    font-size: 1em;
+}
+
+.imagengmail img{
+    height: 7%;
+    width: 7%;
+    margin-left: 20%;
+    display: flex;
+    position: relative;
+}
+/*----------------------------termina datos gmail----------------------------------*/
+/*--------------------------------TERMINA DATOS------------------------------------*/
+
+/*-------------------------------COMIENZA CONTADOR----------------------------------*/
+h3{ 
+    color: white;
+    font-size: 1.5em;
+    font-family:titulo;  
+    margin-left: 23%;
+    top: 30%;
+    margin-top: -3%;
+}
+/*------------------------------TERMINA CONTADOR------------------------------------*/
+.copy p{
+    margin-top: -1.25%;
+    margin-left: 41%;
+    color: #ffffff;
+}
+
+.copy a{
+    margin-top: -1.2%;
+    margin-left: 29%;
+    color: #ffffff;
+    position:absolute;
+    display: flex;
+}
+
+.copy a:hover {
+    color: blue;
+}
+.copy{
+    background-color: #242120;
+    padding: 1.1em;
+    grid-template-columns: repeat(3, 1fr);
+    width: 97.4%;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    border: 0;
+    display: flex;
+    height: 25px;
+}
+
+hr{
+    margin-top: -5.8%;
+}
+
+.redes {
+    position: relative;
+}
+
+.portfolio img{
+    height: 2%;
+    width: 2%;
+    position: relative;
+    float: left;
+    left: 37em;
+    top: 0.3em;
+    padding: 10px 10px;
+}
+
+.instagram img{
+    height: 2%;
+    width: 2%;
+    position: relative;
+    float: left;
+    left: 37em;
+    top: 0.3em;
+    padding: 10px 10px;
+}
+
+.facebook img{
+    height: 2%;
+    width: 2%;
+    position: relative;
+    float: left;
+    left: 37em;
+    top: 0.3em;
+    padding: 10px 10px;
+}
